@@ -13,8 +13,12 @@ public class UserDAO{
 	this.connection = new Database().getConnection();
 	}
 	
+public void update(int id){
+   Connection
+}
+
 	public void create(User user) {
-		String sql = ("INSERT INTO user(cpf,nome,telefone,email,rg)")+ "VALUES(?,?,?,?,?)";
+		String sql = ("INSERT INTO user(cpf,nome,telefone,email,rg) VALUES(?,?,?,?,?)";
 		
 		try {
 			PreparedStatement stat = connection.prepareStatement(sql);
